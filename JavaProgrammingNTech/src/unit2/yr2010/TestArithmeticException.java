@@ -17,7 +17,7 @@ public class TestArithmeticException {
 
 		} finally {
 			k = 0;
-			i = 15;
+			i = 0;
 		}
 
 	}
