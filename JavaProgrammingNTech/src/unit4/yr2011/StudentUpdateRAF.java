@@ -1,6 +1,19 @@
+package unit4.yr2011;
+
 import java.io.RandomAccessFile;
 
-//JAVABean contains Student's Information
+/**
+ * Create a random access file stream for the file “student.dat” for updating
+ * the student information in the file.
+ * 
+ * @version 1.0
+ * @since 17 Mar 2015
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
+
+// JAVABean contains Student's Information
 class StudentInfo {
 	public String rollNo;
 	public String name;
@@ -13,16 +26,15 @@ public class StudentUpdateRAF {
 	public static void main(String[] args) throws Exception {
 		StudentInfo info = new StudentInfo();
 		info.rollNo = "A1";
-		info.name = "Vijay Chohan";
+		info.name = "Abhay Sahu";
 		info.marks = 99;
-
 		updateInfo(info);
-
 	}
 
 	// Method updates Students Information
 	public static void updateInfo(StudentInfo info) throws Exception {
 
+		//Open file in read and write mode.
 		RandomAccessFile in = new RandomAccessFile("student.dat", "rw");
 
 		// Go to Students record

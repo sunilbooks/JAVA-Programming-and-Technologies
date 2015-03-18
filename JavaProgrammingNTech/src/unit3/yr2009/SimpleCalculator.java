@@ -3,6 +3,7 @@ package unit3.yr2009;
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Frame;
+import java.awt.Label;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,13 +32,18 @@ public class SimpleCalculator extends Frame implements ActionListener {
 	 */
 	public SimpleCalculator() {
 		setLayout(new FlowLayout());
-		goButton = new Button("Go");
+
+		// Add button listener
 		goButton.addActionListener(this);
+
+		// Add components to UI
 		add(num1);
+		add(new Label("+"));
 		add(num2);
+		add(new Label("="));
 		add(sum);
 		add(goButton);
-		setSize(600, 400);
+		pack();
 	}
 
 	/**

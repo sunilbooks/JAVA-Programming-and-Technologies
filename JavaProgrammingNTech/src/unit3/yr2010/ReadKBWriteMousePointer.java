@@ -1,7 +1,20 @@
+package unit3.yr2010;
+
 import java.awt.*;
 import java.io.*;
 
-//Program to read data from Keyboard and Print at Mouse Position
+/**
+ * Write a program to get character input from the keyboard and to put the
+ * characters where the mouse points.
+ * 
+ * @version 1.0
+ * @since 17 Mar 2015
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ * 
+ */
+
 public class ReadKBWriteMousePointer {
 
 	public static void main(String[] args) throws Exception {
@@ -11,8 +24,7 @@ public class ReadKBWriteMousePointer {
 				System.in));
 		String chars = stdIn.readLine();
 
-		// Identify Mouse Pointer Position
-
+		// Identify Mouse Pointer points
 		PointerInfo a = MouseInfo.getPointerInfo();
 		Point b = a.getLocation();
 		int x = (int) b.getX();
