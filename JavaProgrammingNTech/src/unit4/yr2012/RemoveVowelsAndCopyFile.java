@@ -1,7 +1,18 @@
+package unit4.yr2012;
+
 import java.io.*;
 
-//A Text File and after removing vowels copy to another Text 
-// file in same directory
+/**
+ * Write a program to read a text file stored in the same directory as program
+ * and write it to another text file without vowels present
+ * 
+ * @version 1.0
+ * @since 17 Mar 2015
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
+
 public class RemoveVowelsAndCopyFile {
 
 	public static void main(String[] args) throws Exception {
@@ -25,7 +36,7 @@ public class RemoveVowelsAndCopyFile {
 			line = in.readLine();
 		}
 
-		//Close Files 
+		// Close Files
 		reader.close();
 		in.close();
 		writer.close();
