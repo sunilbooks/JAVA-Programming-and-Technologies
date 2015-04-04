@@ -20,7 +20,8 @@ public class TestListener {
 
 	public static void main(String[] args) {
 
-		Frame frame = new Frame("Simple Menu");
+		Frame frame = new Frame("Event Window");
+		
 		Button button = new Button("Click Me");
 
 		// Create Listener Object
